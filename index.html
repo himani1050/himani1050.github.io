@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himani Choudhary Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Himani Choudhary</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#technical-skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#connect">Contact</a>
+        </nav>
+        <a href="cv.pdf" class="download-cv" download>Download CV</a>
+    </header>
+    <section class="hero">
+        <div class="dna-bg"></div>
+        <h1>Decoding Life Through <br> Data Science</h1>
+        <p class="subtitle">Bioinformatician passionate about transforming biological data into meaningful insights</p>
+        <div class="contact-btns">
+            <a href="mailto:chaudharyhimani2510@gmail.com" class="btn">📧 Get In Touch</a>
+            <a href="https://github.com/himani1050" target="_blank" title="GitHub">
+                <img src="github_icon.png" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/himani-choudhary-752834249/" target="_blank" title="LinkedIn">
+                <img src="linkedin_icon.png" alt="LinkedIn" class="icon">
+            </a>
+        </div>
+    </section>
+
+    <section class="about-me-section" id="about">
+  <h1 class="about-title">About Me</h1>
+  <p class="about-description">
+    Passionate about bridging the gap between biology and technology through computational approaches
+  </p>
+  <div class="about-grid">
+    <div class="about-card">
+      <h2 class="card-header">Education</h2>
+      <div class="card-content">
+        <div class="edu-degree">MSc Bioinformatics</div>
+        <div class="edu-school">Savitribai Phule Pune University · 2022–2024</div>
+        <p class="edu-detail">
+          Specialized in computational biology, machine learning applications in genomics, transcriptomics, metagenomics, and statistical analysis of biological data.
+        </p>
+        <div class="card-tags">
+          <span>Distinction</span>
+          <span>Computational Biology</span>
+          <span>Data Science</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-card">
+      <h2 class="card-header">Experience</h2>
+      <div class="card-content">
+        <div class="exp-title">Technical Head</div>
+        <div class="exp-org">Edgene Biomed Pvt Ltd · 2024–Present</div>
+        <p class="exp-detail">
+          Analyzing genomic data, developing analysis pipelines, and creating visualizations for biological insights and research support.
+        </p>
+        <div class="card-tags green">
+          <span>Leadership</span>
+          <span>Pipeline Development</span>
+          <span>Data Analysis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="journey-timeline-container">
+      <h2 class="timeline-title">My Journey 🛤️</h2>
+      <div class="timeline">
+        <!-- Chapter 1 -->
+        <div class="timeline-item">
+          <span class="timeline-dot blue"></span>
+          <div class="timeline-content chapter-blue">
+            <a class="timeline-chapter" href="#">Chapter 1: The Awakening</a>
+            <p>
+              Started my MSc journey thinking "How hard could computational biology be?"
+              <span class="italic">*Famous last words*</span><br>
+              Quickly discovered that DNA sequences are basically nature’s way of coding... and debugging is just as frustrating! 🚀🧬
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="timeline-item">
+          <span class="timeline-dot purple"></span>
+          <div class="timeline-content chapter-purple">
+            <a class="timeline-chapter" href="#">Chapter 2: The Plot Thickens</a>
+            <p>
+              Dived into transcriptomics, metagenomics, and machine learning. Built CNNs to detect plant diseases
+              (turns out plants get sick too, who knew?). International collaboration with Norway taught me that science has no borders...
+              but timezone differences are still a pain! 🌍⏰
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="timeline-item">
+          <span class="timeline-dot green"></span>
+          <div class="timeline-content chapter-green">
+            <a class="timeline-chapter" href="#">Chapter 3: Level Up!</a>
+            <p>
+              Became Technical Head at Edgene Biomed. Now I wrangle production pipelines, mentor teammates,
+              and occasionally explain why "it works on my machine" isn’t a valid deployment strategy. Docker containers became my best friends! 🤖✨
+            </p>
+          </div>
+        </div>
+
+        <!-- Current Status -->
+        <div class="timeline-item">
+          <span class="timeline-dot cyan"></span>
+          <div class="timeline-content chapter-cyan">
+            <a class="timeline-chapter" href="#">Current Status: Data Wizard 🧙‍♂️</a>
+            <p>
+              Transforming genomic chaos into actionable insights daily. Still debugging pipelines at 2 AM (some things never change),
+              but now I do it with style and blazing-fast FastAPI endpoints. The DNA doesn't stand a chance!
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+<section class="technical-skills" id="technical-skills">
+  <h2 class="tech-title">Technical Skills</h2>
+  <div class="skills-grid">
+    <!-- Programming Languages -->
+    <div class="skill-box">
+      <div class="box-title">💻Programming Languages</div>
+      <div class="custom-dropdown">
+        <div class="dropdown-header">Select a Skill ▾</div>
+        <ul class="dropdown-list">
+          <li data-desc="Specialized in data analysis, machine learning, and bioinformatics libraries including Pandas, NumPy, and Biopython.">Python</li>
+          <li data-desc="Expert in statistical analysis, Bioconductor packages, and data visualization with ggplot2.">R</li>
+          <li data-desc="Experienced with scripting for text processing and biological data parsing.">Perl</li>
+          <li data-desc="Proficient in pipeline automation and server management for high-throughput workflows.">Bash/Shell</li>
+        </ul>
+        <div class="tooltip"></div>
+      </div>
+    </div>
+
+    <!-- Data Analysis -->
+    <div class="skill-box">
+      <div class="box-title">📊Data Analysis</div>
+      <div class="custom-dropdown">
+        <div class="dropdown-header">Select a Skill ▾</div>
+        <ul class="dropdown-list">
+          <li data-desc="Expert in data manipulation and analysis using Python's core scientific libraries.">Pandas / NumPy</li>
+          <li data-desc="Proficient with Scikit-learn for feature engineering and predictive modeling.">Machine Learning</li>
+          <li data-desc="Advanced knowledge in hypothesis testing and regression analysis techniques.">Statistics</li>
+          <li data-desc="Skilled in creating publication-ready plots using Matplotlib, Seaborn, and ggplot2.">Data Visualisation</li>
+          <li data-desc="Experienced in STRING and KEGG pathway enrichment analysis for biological insights.">Pathway Analysis</li>
+        </ul>
+        <div class="tooltip"></div>
+      </div>
+    </div>
+
+    <!-- Bioinformatics Tools -->
+    <div class="skill-box">
+      <div class="box-title">🧬Bioinformatics Tools</div>
+      <div class="custom-dropdown">
+        <div class="dropdown-header">Select a Skill ▾</div>
+        <ul class="dropdown-list">
+          <li data-desc="Expert in sequence alignment and homology searches for comparative genomics.">BLAST</li>
+          <li data-desc="Proficient in read mapping and alignment for next-generation sequencing data.">BWA/Bowtie</li>
+          <li data-desc="Skilled in BAM/SAM file manipulation and processing for genomic analysis.">SAMtools</li>
+          <li data-desc="Experienced in variant calling and analysis using GATK best practices.">GATK</li>
+          <li data-desc="Advanced microbiome analysis and taxonomic classification workflows.">QIIME2</li>
+          <li data-desc="Proficient with web-based bioinformatics workflow platform for reproducible research.">Galaxy</li>
+        </ul>
+        <div class="tooltip"></div>
+      </div>
+    </div>
+
+    <!-- Database & Infrastructure -->
+    <div class="skill-box">
+      <div class="box-title">🛢Databases & Infrastructure</div>
+      <div class="custom-dropdown">
+        <div class="dropdown-header">Select a Skill ▾</div>
+        <ul class="dropdown-list">
+          <li data-desc="Expert in modern Python web framework for building high-performance APIs.">FastAPI</li>
+          <li data-desc="Proficient in containerization and deployment for reproducible environments.">Docker</li>
+          <li data-desc="Advanced version control and collaboration workflows for scientific projects.">Git/GitHub</li>
+        </ul>
+        <div class="tooltip"></div>
+      </div>
+    </div>
+
+    <!-- Genomics & NGS -->
+    <div class="skill-box">
+      <div class="box-title">🧪Genomics & NGS</div>
+      <div class="custom-dropdown">
+        <div class="dropdown-header">Select a Skill ▾</div>
+        <ul class="dropdown-list">
+          <li data-desc="Expert in gene expression analysis and differential expression studies.">RNA-seq Analysis</li>
+          <li data-desc="Skilled in SNP/INDEL detection and annotation using industry-standard tools.">Variant Calling</li>
+          <li data-desc="Proficient with FastQC, trimming, and filtering for data preprocessing.">Quality Control</li>
+          <li data-desc="Experienced in reference based assembly and de novo assembly techniques for novel genome construction.">Genome Assembly</li>
+          <li data-desc="Advanced skills in QIIME2, DADA2, shotgun sequencing, taxonomic classification, and diversity analysis.">Metagenomics</li>
+        </ul>
+        <div class="tooltip"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====== Featured Projects Section ====== -->
+<section class="featured-projects-section" id="projects">
+  <h2 class="projects-title">Featured Projects</h2>
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Transcriptomic Data Analysis Platform</h3>
+      <p>
+        Designed and deployed a comprehensive transcriptomic data analysis report generation platform with Python backend and fully functional APIs for seamless integration and automated analysis workflows.
+      </p>
+      <div class="subheading">Key Features:</div>
+      <ul>
+        <li>Automated report generation</li>
+        <li>RESTful API integration</li>
+        <li>Scalable Python backend</li>
+        <li>Publication-ready visualizations</li>
+      </ul>
+      <div>
+        <span class="tool-badge">Python</span>
+        <span class="tool-badge">FastAPI</span>
+        <span class="tool-badge">DESEQ2</span>
+        <span class="tool-badge">Pandas</span>
+        <span class="tool-badge">Numpy</span>
+        <span class="tool-badge">Plotly</span>
+        <span class="tool-badge">Docker</span>
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Metagenomic Analysis Platform</h3>
+      <p>
+        Built and deployed a metagenomic data analysis report generation platform using R, enabling automated generation of high-quality PDF reports with comprehensive taxonomic and functional analysis.
+      </p>
+      <div class="subheading">Key Features:</div>
+      <ul>
+        <li>Automated PDF report generation</li>
+        <li>Taxonomic classification</li>
+        <li>Functional analysis</li>
+        <li>Interactive visualizations</li>
+      </ul>
+      <div>
+        <span class="tool-badge">R</span>
+        <span class="tool-badge">DADA2</span>
+        <span class="tool-badge">Phyloseq</span>
+        <span class="tool-badge">Vegan</span>
+        <span class="tool-badge">knitr</span>
+        <span class="tool-badge">Docker</span>
+        <span class="tool-badge">FastAPI</span>
+      </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <h3>Automated Metagenomic Pipeline</h3>
+      <p>
+        Led collaboration and mentorship efforts for developing an automated metagenomic analysis pipeline using QIIME2 and Bash scripting, streamlining microbiome data processing workflows.
+      </p>
+      <div class="subheading">Key Features:</div>
+      <ul>
+        <li>End to End automation</li>
+        <li>Team collaboration</li>
+        <li>Reproducible workflows</li>
+        <li>Quality control integration</li>
+      </ul>
+      <div>
+        <span class="tool-badge">QIIME2</span>
+        <span class="tool-badge">Bash</span>
+        <span class="tool-badge">Nexflow</span>
+      </div>
+    </div>
+    <!-- Project 4 -->
+    <div class="project-card">
+      <h3>ML Biomarker Prediction Model</h3>
+      <p>
+        Developed a machine learning-based biomarker prediction model utilizing gene expression data for diagnostic and prognostic insights, incorporating feature selection and model validation.
+      </p>
+      <div class="subheading">Key Features:</div>
+      <ul>
+        <li>Machine learning implementation</li>
+        <li>Gene expression analysis</li>
+        <li>Diagnostic insights</li>
+        <li>Model validation pipeline</li>
+      </ul>
+      <div>
+        <span class="tool-badge">Python</span>
+        <span class="tool-badge">Scikit-learn</span>
+        <span class="tool-badge">PyDESQ2</span>
+        <span class="tool-badge">pandas</span>
+        <span class="tool-badge">matplotlib</span>
+        <span class="tool-badge">seaborn</span>
+        <span class="tool-badge">KEGG</span>
+        <span class="tool-badge">GO</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Academic Projects Section ====== -->
+<section class="academic-projects-section" id="academic-projects">
+  <h2 class="projects-title">Academic Projects</h2>
+  <div class="academic-projects-grid">
+    <!-- Card 1 -->
+    <div class="academic-card card-1">
+      <div class="emoji">💧</div>
+      <div class="acad-title">International Project - NIWASm</div>
+      <div class="acad-desc">
+        Blended Mobility focusing on Norway-India Water-Soil Microbiome Nexus in collaboration with University of Southeastern Norway<br>
+        <span class="acad-date">(Mar 2023 – Present)</span>
+      </div>
+      <div class="acad-tools">
+        <span class="acad-badge">Python</span>
+        <span class="acad-badge">R</span>
+        <span class="acad-badge">DADA2</span>
+        <span class="acad-badge">Phyloseq</span>
+        <span class="acad-badge">Nextflow</span>
+        <span class="acad-badge">QIIME2</span>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="academic-card card-2">
+      <div class="emoji">🧬</div>
+      <div class="acad-title">Master Thesis - Protein Analysis</div>
+      <div class="acad-desc">
+        Time series approach to detect structural signatures in proteins using conformational states potentials<br>
+        <span class="acad-date">(Nov 2023 – May 2024)</span>
+      </div>
+      <div class="acad-tools">
+        <span class="acad-badge">Python</span>
+        <span class="acad-badge">R</span>
+        <span class="acad-badge">Biopython</span>
+        <span class="acad-badge">pandas</span>
+        <span class="acad-badge">numpy</span>
+        <span class="acad-badge">time series</span>
+        <span class="acad-badge">Statistics</span>
+        <span class="acad-badge">Structural bioinformatics</span>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="academic-card card-3">
+      <div class="emoji">🧠</div>
+      <div class="acad-title">ML Transcriptomics Project</div>
+      <div class="acad-desc">
+        Predictive modeling for breast cancer classification using gene expression profiles and machine learning techniques.
+      </div>
+      <div class="acad-tools">
+        <span class="acad-badge">Python</span>
+        <span class="acad-badge">scikit-learn</span>
+        <span class="acad-badge">pandas</span>
+        <span class="acad-badge">numpy</span>
+        <span class="acad-badge">matplotlib</span>
+        <span class="acad-badge">seaborn</span>
+        <span class="acad-badge">pca</span>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="academic-card card-4">
+      <div class="emoji">🍃</div>
+      <div class="acad-title">Deep Learning - Plant Disease Detection</div>
+      <div class="acad-desc">
+        Potato plant disease detection using CNN-based image classification for agricultural diagnostics.
+      </div>
+      <div class="acad-tools">
+        <span class="acad-badge">Python</span>
+        <span class="acad-badge">TensorFlow</span>
+        <span class="acad-badge">keras</span>
+        <span class="acad-badge">matplotlib</span>
+        <span class="acad-badge">CNN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Let's Connect Section ====== -->
+  <section class="connect-section" id="connect">
+    <h2 class="connect-main-title">Let's Connect</h2>
+    <div class="connect-tagline">
+      Open to opportunities in bioinformatics, computational biology, and data science roles
+    </div>
+  <div class="connect-content-box">
+    <!-- Left: Contact Details -->
+    <div class="connect-left">
+      <h2 class="connect-subtitle">Get In Touch</h2>
+      <p class="connect-desc">
+        I'm passionate about collaborating on projects that leverage computational approaches to solve biological problems.
+        Whether you're interested in discussing research opportunities, potential collaborations, or just want to connect,
+        I'd love to hear from you.
+      </p>
+      <div class="contact-info-list">
+        <div class="contact-info">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-type">Email:</span>
+          <span class="contact-value">chaudharyhimani2510@gmail.com</span>
+        </div>
+        <div class="contact-info">
+          <span class="contact-icon">🔗</span>
+          <span class="contact-type">LinkedIn:</span>
+          <a class="contact-link" href="https://www.linkedin.com/in/himani-choudhary-752834249/" target="_blank">
+            /himani-choudhary
+          </a>
+        </div>
+        <div class="contact-info">
+          <span class="contact-icon">🐙</span>
+          <span class="contact-type">GitHub:</span>
+          <a class="contact-link" href="https://github.com/himani1050" target="_blank">
+            github.com/himani1050
+          </a>
+        </div>
+        <div class="contact-info">
+          <span class="contact-icon">📍</span>
+          <span class="contact-type">Location:</span>
+          <span class="contact-value">Gurugram, HR</span>
+        </div>
+      </div>
+    </div>
+    <!-- Right: Quick Actions & Status -->
+    <div class="connect-right">
+      <div class="quick-actions">
+        <a href="cv.pdf" download class="cv-download-btn">Download CV</a>
+      </div>
+      <div class="status-card">
+        <div class="status-heading">Current Status</div>
+        <div class="status-row">
+          <span class="status-desc">Open to new opportunities and collaborations</span>
+          <button class="available-btn">Available</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	<!--
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+            <p id="formStatus"></p>
+        </form>
+    </section>
+
+
+     Additional sections: About, Skills, Projects, Contact to be added here -->
+
+    <footer>
+        &copy; 2025 Himani Choudhary
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
