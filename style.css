@@ -135,7 +135,7 @@ nav a:hover {
 .icon {
   width: 33px;
   height: 33px;
-  filter: invert(87%) sepia(32%) saturate(255%) hue-rotate(183deg) brightness(88%) contrast(87%);
+  filter: invert(87%) sepia(32%) saturate(255%) hue-rotate(183deg) brightness(38%) contrast(87%);
   margin-left: 4px;
   margin-right: 2px;
   vertical-align: middle;
