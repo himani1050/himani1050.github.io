@@ -11,7 +11,7 @@
         <div class="logo">Himani Choudhary</div>
         <nav>
             <a href="#about">About</a>
-            <a href="#technical-skills">Skills</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#connect">Contact</a>
         </nav>
@@ -121,85 +121,81 @@
   </section>
 
 
-<section class="technical-skills" id="technical-skills">
-  <h2 class="tech-title">Technical Skills</h2>
-  <div class="skills-grid">
-    <!-- Programming Languages -->
-    <div class="skill-box">
-      <div class="box-title">💻Programming Languages</div>
-      <div class="custom-dropdown">
-        <div class="dropdown-header">Select a Skill ▾</div>
-        <ul class="dropdown-list">
-          <li data-desc="Specialized in data analysis, machine learning, and bioinformatics libraries including Pandas, NumPy, and Biopython.">Python</li>
-          <li data-desc="Expert in statistical analysis, Bioconductor packages, and data visualization with ggplot2.">R</li>
-          <li data-desc="Experienced with scripting for text processing and biological data parsing.">Perl</li>
-          <li data-desc="Proficient in pipeline automation and server management for high-throughput workflows.">Bash/Shell</li>
-        </ul>
-        <div class="tooltip"></div>
+<section class="skills-overview" id="skills">
+  <h2 class="skills-heading">Technical Skills</h2>
+  <div class="skills-cards-grid">
+    <!-- Frontend -->
+    <div class="skill-card">
+      <div class="skill-icon-circle">
+        <!-- Replace with your icon (SVG or font) -->
+        <img src="web-development.png" alt="Frontend Icon" />
       </div>
+      <div class="skill-card-title">Programming Languages</div>
+      <ul>
+        <li>Python programming</li>
+        <li>R programming</li>
+        <li>Perl</li>
+        <li>Bash/Shell</li>
+      </ul>
     </div>
-
-    <!-- Data Analysis -->
-    <div class="skill-box">
-      <div class="box-title">📊Data Analysis</div>
-      <div class="custom-dropdown">
-        <div class="dropdown-header">Select a Skill ▾</div>
-        <ul class="dropdown-list">
-          <li data-desc="Expert in data manipulation and analysis using Python's core scientific libraries.">Pandas / NumPy</li>
-          <li data-desc="Proficient with Scikit-learn for feature engineering and predictive modeling.">Machine Learning</li>
-          <li data-desc="Advanced knowledge in hypothesis testing and regression analysis techniques.">Statistics</li>
-          <li data-desc="Skilled in creating publication-ready plots using Matplotlib, Seaborn, and ggplot2.">Data Visualisation</li>
-          <li data-desc="Experienced in STRING and KEGG pathway enrichment analysis for biological insights.">Pathway Analysis</li>
-        </ul>
-        <div class="tooltip"></div>
+    <!-- Backend -->
+    <div class="skill-card">
+      <div class="skill-icon-circle">
+        <img src="monitor.png" alt="Backend Icon" />
       </div>
+      <div class="skill-card-title">Data Analysis</div>
+      <ul>
+        <li>Pandas</li>
+        <li>Numpy</li>
+        <li>Machine Learning</li>
+        <li>Statistics</li>
+        <li>Data Visualisation</li>
+        <li>Pathway Analysis</li>
+      </ul>
     </div>
-
-    <!-- Bioinformatics Tools -->
-    <div class="skill-box">
-      <div class="box-title">🧬Bioinformatics Tools</div>
-      <div class="custom-dropdown">
-        <div class="dropdown-header">Select a Skill ▾</div>
-        <ul class="dropdown-list">
-          <li data-desc="Expert in sequence alignment and homology searches for comparative genomics.">BLAST</li>
-          <li data-desc="Proficient in read mapping and alignment for next-generation sequencing data.">BWA/Bowtie</li>
-          <li data-desc="Skilled in BAM/SAM file manipulation and processing for genomic analysis.">SAMtools</li>
-          <li data-desc="Experienced in variant calling and analysis using GATK best practices.">GATK</li>
-          <li data-desc="Advanced microbiome analysis and taxonomic classification workflows.">QIIME2</li>
-          <li data-desc="Proficient with web-based bioinformatics workflow platform for reproducible research.">Galaxy</li>
-        </ul>
-        <div class="tooltip"></div>
+    <!-- Others -->
+    <div class="skill-card">
+      <div class="skill-icon-circle">
+        <img src="bioinformatics.png" alt="Other Skills Icon" />
       </div>
+      <div class="skill-card-title">Bioinformatics Tools</div>
+      <ul>
+        <li>BLAST</li>
+        <li>BWA/ Bowtie</li>
+        <li>SAMtools</li>
+        <li>GATK</li>
+        <li>QIIME2</li>
+        <li>Galaxy</li>
+      </ul>
     </div>
-
-    <!-- Database & Infrastructure -->
-    <div class="skill-box">
-      <div class="box-title">🛢Databases & Infrastructure</div>
-      <div class="custom-dropdown">
-        <div class="dropdown-header">Select a Skill ▾</div>
-        <ul class="dropdown-list">
-          <li data-desc="Expert in modern Python web framework for building high-performance APIs.">FastAPI</li>
-          <li data-desc="Proficient in containerization and deployment for reproducible environments.">Docker</li>
-          <li data-desc="Advanced version control and collaboration workflows for scientific projects.">Git/GitHub</li>
-        </ul>
-        <div class="tooltip"></div>
-      </div>
+    <!-- Others -->
+	   <div class="skill-card">
+	     <div class="skill-icon-circle">
+	       <img src="medical.png" alt="ngs Skills Icon" />
+	     </div>
+	     <div class="skill-card-title">Genomics & NGS</div>
+	     <ul>
+	       <li>RNA-seq Analysis</li>
+	       <li>Variant calling</li>
+	       <li>Quality control</li>
+	       <li>Genome Assembly</li>
+	       <li>Metagenomics</li>
+	       <li>DNA-seq Analysis</li>
+	     </ul>
     </div>
-
-    <!-- Genomics & NGS -->
-    <div class="skill-box">
-      <div class="box-title">🧪Genomics & NGS</div>
-      <div class="custom-dropdown">
-        <div class="dropdown-header">Select a Skill ▾</div>
-        <ul class="dropdown-list">
-          <li data-desc="Expert in gene expression analysis and differential expression studies.">RNA-seq Analysis</li>
-          <li data-desc="Skilled in SNP/INDEL detection and annotation using industry-standard tools.">Variant Calling</li>
-          <li data-desc="Proficient with FastQC, trimming, and filtering for data preprocessing.">Quality Control</li>
-          <li data-desc="Experienced in reference based assembly and de novo assembly techniques for novel genome construction.">Genome Assembly</li>
-          <li data-desc="Advanced skills in QIIME2, DADA2, shotgun sequencing, taxonomic classification, and diversity analysis.">Metagenomics</li>
-        </ul>
-        <div class="tooltip"></div>
-      </div>
+     <!-- Others -->
+	    <div class="skill-card">
+	      <div class="skill-icon-circle">
+	        <img src="brain.png" alt="ml Skills Icon" />
+	      </div>
+	      <div class="skill-card-title">MLOps & Development Tools</div>
+	      <ul>
+	        <li>FastAPI</li>
+	        <li>Docker</li>
+	        <li>Git/ Github</li>
+	        <li>Machine Learning</li>
+	        <li>Deep Learning (ANN & CNN)</li>
+	      </ul>
     </div>
   </div>
 </section>
@@ -464,3 +460,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
