@@ -9,7 +9,12 @@
 <body>
     <header>
         <div class="logo">Himani Choudhary</div>
-        <nav>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+		  <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav-links">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
@@ -27,7 +32,7 @@
         </div>
     </section>
 
-    <section class="about-me-section" id="about">
+    <section class="about-me-section offset-anchor" id="about">
   <h1 class="about-title">About Me</h1>
   <p class="about-description">
     Passionate about bridging the gap between biology and technology through computational approaches
@@ -121,14 +126,14 @@
   </section>
 
 
-<section class="skills-overview" id="skills">
+<section class="skills-overview offset-anchor" id="skills">
   <h2 class="skills-heading">Technical Skills</h2>
   <div class="skills-cards-grid">
     <!-- Frontend -->
     <div class="skill-card">
       <div class="skill-icon-circle">
         <!-- Replace with your icon (SVG or font) -->
-        <img src="web.png" alt="web Icon" />
+        <img src="web-development.png" alt="Frontend Icon" />
       </div>
       <div class="skill-card-title">Programming Languages</div>
       <ul>
@@ -156,7 +161,7 @@
     <!-- Others -->
     <div class="skill-card">
       <div class="skill-icon-circle">
-        <img src="bioinformatics.png" alt="bioinfo Skills Icon" />
+        <img src="bioinformatics.png" alt="Other Skills Icon" />
       </div>
       <div class="skill-card-title">Bioinformatics Tools</div>
       <ul>
@@ -202,7 +207,7 @@
 
 
 <!-- ====== Featured Projects Section ====== -->
-<section class="featured-projects-section" id="projects">
+<section class="featured-projects-section offset-anchor" id="projects">
   <h2 class="projects-title">Featured Projects</h2>
   <div class="projects-grid">
     <!-- Project 1 -->
@@ -372,7 +377,7 @@
 </section>
 
 <!-- ====== Let's Connect Section ====== -->
-  <section class="connect-section" id="connect">
+  <section class="connect-section offset-anchor" id="connect">
     <h2 class="connect-main-title">Let's Connect</h2>
     <div class="connect-tagline">
       Open to opportunities in bioinformatics, computational biology, and data science roles
@@ -438,21 +443,6 @@
     </div>
   </div>
 </section>
-
-	<!--
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required><br>
-            <input type="email" name="email" placeholder="Your Email" required><br>
-            <textarea name="message" placeholder="Your Message" required></textarea><br>
-            <button type="submit">Send</button>
-            <p id="formStatus"></p>
-        </form>
-    </section>
-
-
-     Additional sections: About, Skills, Projects, Contact to be added here -->
 
     <footer>
         &copy; 2025 Himani Choudhary
