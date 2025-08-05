@@ -17,31 +17,154 @@ body {
 
 /* --- Header --- */
 header {
+
+}
+
+/* Base styles */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 60px 20px 40px;
-  background: transparent;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #22313f;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #22313b;
 }
 
-nav a {
-  margin: 0 18px;
-  color: #22313f;
+/* --- Common Desktop Styles --- */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+.nav-links a {
   text-decoration: none;
-  font-weight: 500;
+  color: #22313b;
+  font-weight: 600;
   font-size: 1rem;
   transition: color 0.2s;
 }
-
-nav a:hover {
+.nav-links a:hover {
   color: #392776;
 }
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  position: relative;
+  width: 36px;
+  height: 28px;
+  z-index: 1100;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  background-color: #22313b;
+  height: 4px;
+  border-radius: 3px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.hamburger { top: 50%; transform: translateY(-50%); }
+.hamburger::before { content: ''; top: -10px; left: 0; }
+.hamburger::after  { content: ''; bottom: -10px; left: 0; }
+.nav-toggle.active .hamburger { background-color: transparent; }
+.nav-toggle.active .hamburger::before { top: 0; transform: rotate(45deg); }
+.nav-toggle.active .hamburger::after  { bottom: 0; transform: rotate(-45deg); }
+
+/* --- MOBILE: Slide-in Right Panel --- */
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1201;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* right align the links */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25vw;             /* 1/4th of the screen */
+    min-width: 180px;        /* don't get too tiny */
+    max-width: 340px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 24px rgba(0,0,0,0.10);
+    padding: 80px 34px 18px 10px;
+    z-index: 1200;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.23s cubic-bezier(.4,2,.7,1), opacity 0.19s;
+  }
+  .nav-links.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+    color: #22313b;
+    margin: 0;
+    padding: 0.7em 0 0.7em 0;
+    width: 100%;
+    text-align: right;
+    border: none;
+  }
+}
+
+/* --- DESKTOP OVERRIDE --- */
+@media (min-width: 901px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    align-items: center;
+    gap: 24px;
+  }
+  .nav-links a {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .nav-toggle {
+    display: none !important;
+  }
+}
+
+
+.offset-anchor {
+  scroll-margin-top: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px; /* match your header's height */
+}
+
 
 .download-cv {
   padding: 8px 20px;
@@ -855,6 +978,59 @@ body {
     padding: 18px 4px 12px 4px;
   }
 }
+
+@media (max-width: 600px) {
+  .connect-content-box {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 18px !important;
+    padding-bottom: 12px !important;
+  }
+  .connect-right {
+    align-items: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .quick-actions {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+  .cv-download-btn {
+    display: block !important;
+    margin: 20px auto 0 auto !important;
+    width: 92% !important;
+    max-width: 340px !important;
+    min-width: 120px !important;
+    border-radius: 10px !important;
+    font-size: 1.09rem !important;
+    text-align: center !important;
+    float: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cv-download-btn {
+    margin-top: -150px !important;   /* reduce from 18px/20px or higher */
+    margin-bottom: 150px !important;
+  }
+  .quick-actions {
+    margin-top: 0 !important;
+  }
+  .contact-info-list {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+/* ====== Skills Section ====== */
 
 .skills-overview {
   max-width: 1100px;
